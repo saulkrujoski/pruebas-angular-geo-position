@@ -1,0 +1,13 @@
+<div class="container">
+  <form>
+    <fieldset>
+      <legend>Obtén tu Geo-localización</legend>
+      <label>Latitud:</label>
+      <input type="text" placeholder="¡Recuperando Latitud!" [(ngModel)]="latitud" disabled [ngModelOptions]="{standalone: true}">
+      <label>Lóngitud:</label>
+      <input type="text" placeholder="¡Recuperando Lóngitud!" [(ngModel)]="longitud" disabled [ngModelOptions]="{standalone: true}">
+      <button class="btn btn-info" (click)="getLocation()">¡Obtener!</button>
+    </fieldset>
+  </form>
+  Iconos diseñados por <a href="http://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.es/" title="Flaticon"> www.flaticon.es</a>
+</div>
